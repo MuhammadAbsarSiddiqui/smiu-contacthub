@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIU ContactHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SMIU ContactHub</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#form">Add Contact</a>
+        <a href="#saved">Saved Contacts</a>
+    </nav>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <h2>Welcome to SMIU ContactHub</h2>
+            <p>Your one-stop solution to save and manage contacts efficiently!</p>
+
+            <!-- About Section -->
+            <div class="about">
+                <h3>About SMIU ContactHub</h3>
+                <p>SMIU ContactHub is a simple and user-friendly contact-saving app that allows you to store, manage, and access your important contacts easily. Whether it's for personal or emergency use, this app has you covered!</p>
+            </div>
+
+            <div class="features">
+                <h3>Key Features</h3>
+                <p>
+                     Save and manage contacts effortlessly.<br>
+                    Store emergency contact information.<br>
+                    Fully responsive and mobile-friendly.<br>
+                    Having update fuctionality<br>
+                    Data privacy ensured (coming soon).<br>
+                </p>
+            </div>
+
+            <div class="cta">
+                <button href="#form" id="btn"  class="button">Start Adding Contacts</button>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="form">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="emergency">Emergency Contact Number:</label>
+                <input type="tel" id="emergency" name="emergency" required>
+                
+                <button id="btn" type="submit" href="#saved">Save Contact</button>
+            </form>
+        </section>
+
+          <!-- Saved Contacts Section -->
+          <section id="saved">
+            <h2>Saved Contacts</h2>
+            <p>Here are the contacts you have saved:</p>
+                        <input type="text" id="searchBar" placeholder="Search contacts..." onkeyup="filterContacts()" />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Emergency Contact</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Muhammad Absar Siddiqui</td>
+                        <td>BSE-22F-120</td>
+                        <td>absar.sid@gmail.com</td>
+                        <td>+92 3303047707</td>
+                        <td>+92 3344188992</td>
+                        <td class ="tdbtn"><button>Edit</button>
+                        <button>Update</button>
+                        <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Murtaza Ali</td>
+                        <td>BSE-22F-112</td>
+                        <td>murtazakhan@gmail.com</td>
+                        <td>+92 3344556621</td>
+                        <td>+92 3322875458</td>
+                        <td class ="tdbtn"><button>Edit</button>
+                        <button>Update</button>
+                        <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SMIU ContactHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
